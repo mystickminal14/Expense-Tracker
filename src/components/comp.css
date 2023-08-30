@@ -1,0 +1,152 @@
+.bal{
+    display:flex;
+    flex-direction:column;
+}
+.title{
+    font-family:'righteous';
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+.box{
+    display:flex;
+    width:350px;
+    justify-content: center;
+    gap:4.8em;
+    align-items:center;
+ height:80px;
+ 
+position: relative;
+    border-radius:4px;
+    border:2px solid rgb(120, 120, 249);
+    box-shadow:0px 2px 4px black;
+
+}
+.box::before{
+content:'';
+position:absolute;
+top:15px;
+left:170px;
+width:2px;
+height:50px;
+background:gray;
+}
+.bal h3{
+    font-family:'poppins';
+}
+.bal h1{
+    font-family:'hammersmith one';
+}
+.delete{
+    position:absolute;
+    width:30px;
+    height:30px;
+    left:-30px;
+   visibility: hidden;
+    top:-4px;;
+
+}
+.lis:hover .delete, .lisg:hover .delete{
+    visibility: visible;
+}
+.lis,
+.lisg {
+  /* ... your other styles ... */
+
+  /* Add transition properties */
+  transition: opacity 0.3s ease, height 0.3s ease;
+}
+.inc{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inc h3{
+    font-family:'hammersmith one';
+}
+.inc h1{
+    font-size:1.3rem;
+    font-family:'hammersmith one';
+}
+.history{
+    margin-top:20px;
+    width:350px;
+    padding-bottom:0.6em;
+}
+.history h4{
+    font-family:'hammersmith one';
+}
+.history{
+   border-bottom-style:groove
+}
+.lis{
+    position:relative;
+    width:350px;
+   box-shadow:0px 1.5px 2px darkslategray;
+    display:flex;
+    border-right-style: solid ;
+    border-right-width: 8px;
+    border-right-color: red;
+    justify-content: space-between;
+    padding:0.5em;
+    border-color:red;
+}
+.lisg{
+    position:relative;
+    width:350px;
+   box-shadow:0px 1.5px 2px darkslategray;
+    display:flex;
+    border-right-style: solid ;
+    border-right-width: 8px;
+    border-right-color: red;
+    justify-content: space-between;
+    padding:0.5em;
+    border-color:lightseagreen;
+}
+.lis h5{
+    font-family:"hammersmith one";
+}
+.lisg h5{
+    font-family:"hammersmith one";
+}
+.form{
+    display:flex;
+    
+    gap:0.3em;
+    flex-direction: column;
+}
+.t{
+    font-family:'hammersmith one';
+ 
+}
+input[type='text'],input[type='number']{
+    width:350px;
+    padding:0.5em;
+    outline:none;
+    border:2px solid black;
+}
+button{
+    width:350px;
+    background:skyblue;
+    padding:0.5em;
+    color:black;
+ 
+    font-family:'hammersmith one';
+}
+@media(max-width:380px){
+    .box, .history, input[type='text'],input[type='number'], .add{
+        width:300px;
+    }
+    .title{
+        font-size:1.5rem;
+    }
+}
+@media(max-width:330px){
+    .box, .history, input[type='text'],input[type='number'], .add{
+        width:260px;
+    }
+    .title{
+        font-size:1.5rem;
+    }
+}
